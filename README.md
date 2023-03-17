@@ -2,6 +2,7 @@
 
 Building a Guess-number game with JS Course on udemy and also learing how to work with GIT.
 
-Trying to pull ( that line ia changed on GitHub)
+# What is game about?
 
-Everything went well!
+Try to guess a number form 1 to 20. Application will count Your score.
+By pressing Again! you will be albe to one more play the game. Try your guessing power!
