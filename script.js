@@ -26,6 +26,8 @@ let secretNumber = Math.floor(Math.random() * 20) + 1;
 //! stworzenie zmiennej prechowujacej ilosć prób po których user zgadł wynik i zmneijszanie go po każdej złej próbie i wyświetlanie... Dodatkowo należy pamiętac że takie rozwiazanie jak przetryzmywanie zmiennych w kdozie jest najlepsze ( wszystkir dane są wtedy dostępne) , mógłym to zrobić jeszcze tak ze odczytuje wartość ze socre na stronie i zmnijeszam ja o 1 i wpisuje i znó odczytuje i znów wpsiuje. ALE TO ZŁA PRAKTYKA. Po pierwsze apliakcja nie wie w żadnym punkcie jaki użytkonwik ma wynik a po drugie polegamy na DOM ( wartosć score była by "przetrzymywana właśnie tam")
 let score = 20;
 //
+//! Variable for heighscore
+let heighscore = 0;
 
 //! Handling Click Events
 //Czyli odczytanie np input jaki dał user w momencie jak kliknie button
@@ -52,6 +54,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
     document.querySelector('.number').textContent = secretNumber;
+    //! Implementing heighscore
+    if (score > heighscore) {
+      heighscore = score;
+      document.querySelector('.highscore').textContent = heighscore;
+    }
   }
   //when users number it too high
   else if (guess > secretNumber) {
