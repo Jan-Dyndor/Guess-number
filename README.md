@@ -6,3 +6,5 @@ Building a Guess-number game with JS Course on udemy and also learing how to wor
 
 Try to guess a number form 1 to 20. Application will count Your score.
 By pressing "Again!" you will be able to once more play the game. Try your guessing power!
+
+Project created from Udemy course The Complete JavaScript Course 2023: From Zero to Expert! by Jonas Schmedtmann
